@@ -1,4 +1,4 @@
-class Video(override val type: String, override val govno: String): Attachment {
+class Video(override val type: String, val video: Video): Attachment {
 }
 
 class VideoAttachment(val video: Video,

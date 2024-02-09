@@ -1,4 +1,4 @@
-class Audio(override val type: String, override val govno: String) : Attachment {
+class Audio(override val type: String, val audio: Audio) : Attachment {
 }
 
 class AudioAttachment(val audio: Audio,

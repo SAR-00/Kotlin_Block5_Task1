@@ -1,4 +1,4 @@
-class Photo(override val type: String, override val govno: String) : Attachment {
+class Photo(override val type: String, val photo: Photo) : Attachment {
 }
 
 class PhotoAttachment(val photo: Photo,
